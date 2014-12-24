@@ -26,4 +26,8 @@ class golang ( $version = "1.4" ) {
     unless  => "/bin/grep -q GOPATH /home/vagrant/.profile ; /usr/bin/test $? -eq 0"
   }
 
+  package { "git":
+    ensure => installed
+  }
+  
 }

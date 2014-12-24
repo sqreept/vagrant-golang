@@ -9,4 +9,5 @@ Vagrant::Config.run do |config|
     puppet.manifests_path  = "manifests"
     puppet.manifest_file      = "init.pp"
   end
+  config.ssh.shell = "bash -c 'BASH_ENV=/home/vagrant/.profile exec bash'"
 end
