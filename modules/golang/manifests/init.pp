@@ -27,8 +27,7 @@ class golang ( $version = "1.4" ) {
   }
 
   exec { "install-git":
-    command => "/usr/bin/apt-get -qy update &&  /usr/bin/apt-get -qy install git",
-    unless  => "/usr/bin/test -x /usr/bin/git"
+    command => "/usr/bin/apt-get -qy update &&  /usr/bin/apt-get -qy install git mercurial"
   }
   
 }
