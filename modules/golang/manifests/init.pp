@@ -27,7 +27,8 @@ class golang ( $version = "1.4" ) {
   }
 
   package { "git":
-    ensure => latest
+    ensure => latest,
+    require  => Exec['apt-get update -qy']
   }
   
 }
