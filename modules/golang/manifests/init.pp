@@ -27,7 +27,7 @@ class golang ( $version = "1.4" ) {
   }
 
   package { "git":
-    ensure => installed
+    ensure => latest
   }
   
 }
